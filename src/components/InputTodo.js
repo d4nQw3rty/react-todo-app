@@ -3,25 +3,21 @@ import React, { Component } from 'react';
 class InputTodo extends Component {
   state = {
     title: '',
-  };
+  }
 
   onChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
     });
-  };
+  }
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if (this.state.title.trim()) {
-      this.props.addTodoProps(this.state.title);
-      this.setState({
-        title: '',
-      });
-    } else {
-      alert('Please write item');
-    }
-  }
+    this.props.addTodoProps(this.state.title);
+    this.setState({
+      title: '',
+    });
+  };
 
   render() {
     return (
@@ -29,12 +25,12 @@ class InputTodo extends Component {
         <input
           type="text"
           className="input-text"
-          placeholder="Add Todo..."
+          placeholder="Add todo..."
           value={this.state.title}
           name="title"
           onChange={this.onChange}
         />
-        <button className="input-submit">Submit</button>
+        <input type="submit" className="input-submit" value="Submit" />
       </form>
     );
   }
