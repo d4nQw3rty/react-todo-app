@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className="navBar">
       <button type="button" onClick={handleToggle}>{navbarOpen ? 'Close' : 'Open'}</button>
-      <ul>
+      <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
         {links.map((link) => (
           <li key={link.id}>
             <NavLink to={link.path} activeClassName="active-link" exact>{link.text}</NavLink>
