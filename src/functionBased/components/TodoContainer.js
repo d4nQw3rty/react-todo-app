@@ -64,20 +64,7 @@ const TodoContainer = () => {
 
   return (
     <>
-      <>
-        <Navbar />
-        <Switch>
-          <Route exact path="/">
-            ...
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="*">
-            <NotMatch />
-          </Route>
-        </Switch>
-      </>
+      <Navbar />
       <Switch>
         <Route exact path="/">
           <div className="container">
@@ -103,5 +90,4 @@ const TodoContainer = () => {
     </>
   );
 };
-
 export default TodoContainer;
