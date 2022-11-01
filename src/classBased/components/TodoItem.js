@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import styles from './TodoItem.module.css';
 
 class TodoItem extends React.Component {
@@ -62,4 +62,4 @@ class TodoItem extends React.Component {
   }
 }
 
-export default TodoItem;
+export default TodoItem; */

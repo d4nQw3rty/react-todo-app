@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 
 const Header = () => {
   const headerStyle = {
@@ -26,3 +26,4 @@ const Header = () => {
 };
 
 export default Header;
+*/

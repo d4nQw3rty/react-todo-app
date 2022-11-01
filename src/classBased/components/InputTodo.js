@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/* import React, { Component } from 'react';
 
 class InputTodo extends Component {
   state = {
@@ -35,4 +35,4 @@ class InputTodo extends Component {
     );
   }
 }
-export default InputTodo;
+export default InputTodo; */
